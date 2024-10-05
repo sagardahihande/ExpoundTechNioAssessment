@@ -1,0 +1,306 @@
+/* Dashboard.css */
+
+/* General Layout */
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    width: 80px;
+    background-color: #1a73e8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+    align-items: center;
+  }
+  
+  .sidebar .MuiIconButton-root {
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar .MuiIconButton-root:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex-grow: 1;
+    background-color: #f5f6f8;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Top Navbar */
+  .top-navbar {
+    background-color: #1a73e8;
+    color: white;
+  }
+  
+  .navbar-title {
+    font-size: 18px;
+  }
+  
+  .header {
+    background-color: #ffffff;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .breadcrumbs {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Lead Header */
+  .lead-header {
+    padding: 16px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lead-header h5 {
+    margin: 0;
+  }
+  
+  .convert-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .convert-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Status Buttons */
+  .status-buttons {
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 10px;
+    margin-left: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .status-button {
+    font-size: 14px;
+    padding: 10px 16px;
+    border-radius: 4px;
+    text-transform: none;
+  }
+  
+  .status-button.new {
+    background-color: #ff9900de;
+    color: white;
+  }
+  
+  .status-button.contacted {
+    background-color: gray;
+    color: white;
+  }
+  
+  .status-button.nurturing {
+    background-color: #ff5722;
+    color: white;
+  }
+  
+  .status-button.qualified {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .status-button.unqualified {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Lead Activity & History */
+  .lead-activity-history {
+    padding: 16px;
+  }
+  
+  .lead-activity-history .MuiGrid-item {
+    background-color: white;
+    padding: 16px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Lead Info Tabs */
+  .lead-info-tabs .MuiTab-root {
+    text-transform: none;
+  }
+  
+  .lead-info-content {
+    margin-top: 16px;
+  }
+  
+  /* Activity Tabs */
+  .activity-tabs .MuiTab-root {
+    text-transform: none;
+  }
+  
+  .activity-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .text-word{
+    font-weight: bold;
+  }
+
+  .textarea{
+    border-radius: 5px;
+  }
+  
+  .activity-fields .MuiTextField-root {
+    margin-bottom: 16px;
+
+  }
+  
+  .activity-fields .MuiInputBase-input {
+    padding: 10px;
+  }
+
+  .activity-fields-last{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Lead Info and Actions */
+.lead-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.left-info {
+    font-size: 16px;
+}
+
+.contact-status h2 {
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+.contact-status p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.actions .btn {
+    padding: 10px 15px;
+    background-color: #1A2A46;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.tab.active {
+    background-color: white;
+    border-bottom: 2px solid #1A2A46;
+}
+
+/* Grid Layout - Main Sections */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 20px;
+}
+
+.details-left {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+  
+  /* Stage History */
+  .stage-history {
+    background-color: white;
+    padding: 16px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stage-history h6 {
+    margin-bottom: 16px;
+  }
+  
+  .stage-history .MuiListItemText-primary {
+    font-size: 14px;
+  }
+  
+  .stage-history .MuiListItemText-secondary {
+    font-size: 12px;
+    color: #757575;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .lead-activity-history {
+      flex-direction: column;
+    }
+  
+    .lead-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .status-buttons {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .activity-buttons {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
